@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Leave Form
+	</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/10155896e6.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.png"> 
+</head>
+<body>
+
+	<main class="container">
+		<form class="form-container" method="POST">
+				<header>
+					<div id="grid">
+						<div id="address">
+							<img src="img/logo.jpg" >
+							<p><span class="bold">Headquarters</span><br>
+							    BUA Towers<br>PC 32, Churchgate Street
+							    P.O Box 70106 Victoria Island, Lagos,Nigeria<br>
+							    <span class="bold">T. </span>+234 1 461 0669 <span class="bold">E. </span>info@buagroup.com
+							</p>
+						</div>
+						<div id="leave">
+							<h3><span class="bold">LEAVE REQUEST FORM</span></h3>
+							<hr>
+							<p>RC 110076</p>
+						</div>
+						<div id="instr">
+							<p><span class="italic bold">VERY IMPORTANT</span></p>
+							<p class="italic">1. Staff are expected to give a<span class="bold"> NOTICE OF ONE WEEK </span>before commencement of annual leave</p>
+							<p class="italic">2. Staff should not proceed on leave<span class="bold"> UNTIL</span>they have received Approval Coupon from HR Department</p>
+						</div>
+						<div id="date">
+							<input type="date" name="date">
+						</div>
+					</div>
+				</header>
+
+				<section id="credentials">
+					<p><span class="bold">SECTION 1 </span>(TO BE COMPLETED BY STAFF)</p>
+					<ul>
+						<li>
+							<div class="form-group c1">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name">
+							</div>
+
+							<div class="form-group c2">
+								<label for="name">SAP No.</label>
+								<input type="number" name="sapno" id="sapno">
+							</div>
+
+							<div class="form-group c3">
+								<label for="cadre">Cadre/Designation</label>
+								<input type="text" name="cadre" id="cadre">
+							</div>
+
+							<div class="form-group c4">
+								<label for="department">Department</label>
+								<input type="text" name="department" id="department">
+							</div>
+
+							<div class="form-group c5">
+								<label for="shift">shift</label>
+								<select id="shift" name="shift">
+									<option value="morning">Morning</option>
+									<option value="afternoon">Afternoon</option>
+									<option value="night">Night</option>
+								</select>
+							</div>
+						</li>	
+				    </ul>
+				</section>
+
+				<section  id="Leavetype">
+					<p>Type of Leave <span class="italic">(Please tick as applicable)</span></p>
+					<ul>
+						<li>
+							<div class="type1">
+								<label for="annual">Annual Leave</label>
+								<input type="radio" name="type" id="annual">
+							</div>
+
+							<div class="type2">
+								<label for="maternity">Maternity</label>
+								<input type="radio" name="type" id="maternity">
+							</div>
+
+							<div class="type3">
+								<label for="casual">Casual Leave</label>
+								<input type="radio" name="type" id="casual">
+							</div>
+
+							<div  class="type4">
+								<label for="compassionate">Compassionate Leave</label>
+								<input type="radio" name="type" id="comp">
+							</div>
+
+					     	<div class="type5">
+								<label for="department">Examination Leave	</label>
+								<input type="radio" name="type" id="exam">
+							</div>
+						</li>
+					</ul>
+					<p>If Casual Leave, please specify purpose</p><input type="text" name="reason" id="reason"><input type="text" name="reason" id="reason2">
+
+
+					<ul  class="leavedetails">
+						<li>
+							
+								<label for="leaveyear">Leave Year</label>
+								<input type="number" name="leaveyear" id="leaveyear">
+								<input type="number" name="leaveyear" id="leaveyear">
+ 
+							
+								<label for="entitledleave">Annual Leave Days entitled</label>
+								<input type="number" name="entitledleave" id="entitledleave">
+								<input type="number" name="leaveyear" id="leaveyear">
+							
+
+							
+								<label for="daystaken">No. of Days already taken</label>
+								<input type="number" name="daystaken" id="daystaken">
+								<input type="number" name="leaveyear" id="leaveyear">
+						
+
+							
+								<label for="totdaysvac">Total Days this Vacation</label>
+								<input type="number" name="totdaysvac" id="totdaysvac">
+								<input type="number" name="leaveyear" id="leaveyear">
+						
+						</li>
+					</ul>
+	
+					<div class="Holidays">
+							<div class="outstand">
+									<p>Outstanding No. of Days after this Vacation</p>
+									<input type="number" name="outstanding" id="outstanding">
+									<input type="number" name="outstanding" id="outstanding2">
+							</div>
+							<p>Public Holidays included(Give dates)</p>
+							<input type="text" name="publicholidays" id="publicholidays">
+					</div>
+
+
+
+					<div id="startleave">
+						<div>
+							<label for="daystaken">Leave Commences</label>
+							<input type="date" name="daystaken" id="daystaken">
+						</div>
+
+						<div>
+							<label for="daystaken">Leave Ends</label>
+							<input type="date" name="daystaken" id="daystaken">
+						</div><br>
+
+						<div>
+							<label for="daystaken">Resumption Date</label>
+							<input type="date" name="daystaken" id="daystaken">
+						</div>
+					</div>
+
+
+					<div id="contact">
+						<p>Contact Address<span class="little"> (while on leave)</span><input type="text" name="contact" id="contact1">
+						<input type="text" name="contact" id="contact2">
+						</p>
+						<p>Contact Phone No.<input type="text" name="contact" id="contact3"></p>
+						<P class=>Contact E-mail </P><input type="email" name="contact" id="contact4">
+					</div>
+				</section>
+				<hr class="sectionend">
+
+				<section id="declaration">
+					<p><span class="bold">SECTION 2- DECLARATION</span></p>
+					<div class="handover">
+						<p>I will do / I have already done my handover note to</p>
+						<input type="text" name="decl" id="declare">
+					</div>
+						<p><span class="bold italic">Reliever to acknowledge receipt of handover note and accept 
+						to cover for the staff proceeding on leave</span></p><br>
+					<div class="dateover">
+						<input type="text" name="">
+						<p>Date<input type="date" name="datef" id="date5"></p>
+					</div>
+
+					<p><span class="italic">Applicant's Signature</span></p>
+					<hr>
+
+				</section>
+
+				<section id="section-4" >
+						<p><span class="bold">SECTION 3 - Approval</span></p>
+						<p>I confirm that the applicant can proceed on his/her leave as stated and is entitled to be paid/ has already been paid leave allowance.</p>
+						<div id="signature">
+								<div>
+									<input type="text">
+									<p><span class="italic">Supervisor's Signature</span></p>
+								</div>
+								<div>
+									<input type="text">
+									<p><span class="italic">HOD/Subsidiary's Signature</span></p>
+								</div>
+								<div>
+									<input type="text">
+									<p><span class="italic">Head, HR Signature</span></p>
+								</div><br>
+						</div>
+
+						<div id="Dates">
+							    <div>
+									<label>Date</label><br>
+									<input type="date">
+							    </div>
+							    <div>
+									<label>Date</label><br>
+									<input type="date">
+								</div>
+								<div>
+									<label>Date</label><br>
+									<input type="date">
+								</div>
+						</div>
+				</section>
+
+			<section>
+			<p  class="italic bold main-footer">NOTE: Staff who have requested for any form of leave must receive an Approved Memo (Section A) duly signed by Head of Human Resources, before proceeding on leave. On resumption of duty. Section B of the attached should duly completed by the staff and forwarded to the Human Resources Department  </p>
+		    </section>
+
+		</form>
+			</main>
+</body>
+</html>

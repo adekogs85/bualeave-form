@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--max-width: 1100px;
+}
+
+body{
+	font-family:'Ubuntu', sans-serif;
+	background: url("../img/LandingB.jpg") no-repeat center center ;
+	z-index: -2;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style:none;
+}
+
+img{
+	width: 100%;
+}
+
+
+/*utility classes*/
+
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 2rem auto;
+	overflow:hidden; 
+	max-width: var(--max-width);
+	background:#fff;
+	width: 100%;
+	border-radius:5px; 
+	border:1px  solid rgb(155,33,43);
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.container:hover{
+	box-shadow: 4px 4px 5px rgba(155,33,43,0.7);
+}
+
+.form-container{
+	padding: 0 0.5rem;
+}
+
+
+.italic{
+	font-style:italic;
+}
+
+.bold{
+	font-weight: bolder;
+
+}
+
+.little{
+	font-size: 0.7rem;
+}
+
+py-1{padding: 1.5rem 0;}
+
+py-2{padding:2rem 0;}
+
+py-3{padding: 3rem 0;}
+
+py-4{padding:0.5rem 0; }
+
+py-5{padding: 0.8rem 0;}
+
+p-1{padding: 1rem;}
+
+p-2{padding:0.5rem;}
+
+p-3{padding: 2rem;}
+
+p-4{padding:1.5rem;}
+
+pyx-0{padding:0.5rem 0.8rem;}
+
+pyx-1{padding:1rem 1.2rem;}
+
+
+/*grid*/
+
+#grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 1rem;
+	margin: 1rem;	
+}
+
+#address{
+	display:flex;
+	font-size: 0.8rem;
+
+}
+
+#address img{
+	width: 10%;
+	height: 15%;
+	margin-right: 0.6rem;
+}
+
+#address p{
+	white-space:normal;
+	margin-top: 0.8rem;
+}
+
+#date{
+	display: flex;
+	justify-self:end;
+	height: 50%;
+}
+
+/*credentials entry*/
+#credentials{
+	margin: 1rem;
+}
+
+#credentials p{
+	margin: 1.3rem 0 ;
+}
+
+#credentials ul{
+	display: inline;
+}
+
+#credentials ul li{
+	display: grid;
+	grid-gap: 1rem;
+}
+
+#credentials ul li .c1 input[type='text']
+{
+	width:90%;
+	border: none;
+	border-bottom: 1px solid rgba(155,33,43,0.8);
+	outline: none;	
+	font-size: 1.2rem;
+}
+
+#credentials ul li .c2 input[type='number']{
+	border: none;
+	border-bottom: 1px solid rgba(155,33,43,0.8);
+	outline: none;
+	font-size: 1.2rem	
+}
+#credentials ul li .c3 input[type='text']{
+	border: none;
+	border-bottom: 1px solid rgba(155,33,43,0.8);
+	outline: none;	
+	width: 60%;
+	font-size: 1.2rem;
+}
+
+#credentials ul li .c4 input[type='text']{
+	width:67%;
+	border: none;
+	border-bottom: 1px solid rgba(155,33,43,0.8);
+	outline: none;
+	font-size: 1.2rem;
+}
+
+#credentials ul li .c5 select{
+	width: 50%;
+	font-size: 1.1rem;
+}
+
+
+#credentials ul li .c1{
+	grid-column-start: 1;
+	grid-column-end:3;	
+}
+
+#credentials ul li .c2{
+	grid-column-start: 3;
+	grid-column-end:4;
+}
+
+.form-group label{
+	margin-right: 0.5rem;
+}
+
+ 
+/*type of leave*/
+
+#Leavetype{
+	width:100%;
+	margin:1rem;
+}
+
+#Leavetype ul li {
+	display: flex;
+	margin: 1rem 0;
+}
+
+#Leavetype ul li div{
+	margin-right:  2rem;
+}
+
+#Leavetype  input[type='text']{
+	width:90%;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid rgb(155,33,43);
+	font-size: 1.2rem;
+}
+
+
+/*leavedetails*/
+.leavedetails {
+	font-size: 0.9rem;
+
+}
+.leavedetails ul li{
+	display:flex;
+}
+.leavedetails li input[type='number']{
+	width:4%;			
+}
+
+.leavedetails li label {
+	margin:0 1rem;
+}
+
+
+/*Holidays*/
+
+.Holidays{
+	font-size: 0.9rem;
+	display: flex;
+}
+.Holidays .outstand {
+	display: flex;
+	width:45%;
+}
+.Holidays .outstand p{
+	margin-right: 0.3rem;
+}
+
+.Holidays .outstand input[type='number']{
+	width:10%;
+	height:20px;
+
+}
+
+#Leavetype .Holidays input[type='text']{
+	width:28%;
+	margin-left: 1rem;
+}
+
+
+/*when leave starts*/
+
+#startleave{
+	display: flex;
+	margin: 1rem 0;
+}
+
+#startleave div{
+	margin-right: 1rem;
+}
+
+
+/*contact address*/
+
+
+
+.sectionend{
+	padding: 1px;
+	background:black;
+	width:97%;
+	margin:auto;
+}
+
+
+/*declaration*/
+#declaration{
+	margin:0.8rem 1rem;	
+}
+
+#declaration div  {
+	display:flex;
+	margin:1.2rem 0;
+}
+
+
+#declaration  hr{
+	margin-bottom: 0.7rem;
+	display: block;
+	padding: 1px;
+	background:black;
+}
+
+#section-4 {
+	margin:0.5rem 1rem;
+}
+
+
+/*footer */
+.main-footer{
+	margin: 1rem 0.5rem;
+	text-align: center;
+}
+
+
+#signature{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+#signature div{
+	margin: 1rem 2rem;
+	margin-left: 0;
+}
+
+#Dates{
+	display: flex;
+}

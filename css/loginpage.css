@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0 ;
+	padding: 0;
+}
+
+:root{
+	--main-font:'Montserrat', sans-serif;
+	--primary-colour:;
+
+}
+
+body{
+	font-family:'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	height:100vh;
+	width:100%;
+	background:url("../img/landingB.jpg")  no-repeat center center /cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+
+.main-header{
+	text-align:center;
+
+}
+
+.main-header h1{
+	font-size: 2.5rem;
+	margin:1.3rem;
+}
+
+.main-header h3{
+	margin:1.3rem;
+}
+
+.main-header hr{
+	width: 45%;
+	margin: auto;
+	padding:1px;
+	background: rgba(155,33,43,0.7);
+	border: none;
+	border-radius:3px;
+
+}
+
+.main-header input{
+	width: 55%;
+	padding:0.8rem 2rem;
+	margin: 0.8rem 0;
+	border: none;
+	border-bottom: 1px solid rgba(155,33,43,0.9);
+	font-size:1.2rem;		
+	outline: none;
+	border-radius: 3px;
+}
+
+
+
+.main-header .btn  {
+	border:none;
+	padding: 0.7rem 0.8rem;
+	margin: 0.2rem 0.4rem;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.7s;
+}
+
+.main-header .btn:hover{
+	background: rgba(155,33,43,0.7);
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+	transform: scale(1.2);
+}
+
+.main-header .link a{
+	text-decoration: none;
+	outline: none;
+}
+
+.main-header .link a:hover{
+	colot:#fff;
+}
+
+.main-header img{
+		width: 15%;
+		height:30%;
+		cursor: pointer;
+		transition: all 0.7s;
+}
+
+.main-header img:hover {
+	transform: scale(1.2);
+	box-shadow: 4px 4px 5px rgba(155,33,43,0.5);
+}
+
+.main-header i{
+	color:rgba(155,33,43,0.8);
+}
+
+.main-header .social{
+	justtify-self:end;
+}

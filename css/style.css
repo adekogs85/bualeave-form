@@ -1,0 +1,123 @@
+:root{
+	--max-width: 1000px;
+	--primary-colour:rgba(255,228,225,0.4);
+}
+
+
+
+*{
+	box-sizing: border-box;
+	margin:1.3rem 0 ;
+	padding: 0;
+}
+
+a{
+  	text-decoration:none;
+ }
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+ ul{
+ 	list-style: none;
+ }
+
+ img{
+ 	width: 100%;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+ 	font-family: 'Roboto', sans-serif; 
+
+ }
+
+ p{
+ 	margin: 0.7rem 0.4rem;
+ 	font-family: 'Roboto', sans-serif;
+ }
+
+/*utility classes*/
+.container{
+	max-width:var(--max-width);
+	margin: auto;
+	border-radius: 10px;
+	background:var(--primary-colour);
+	overflow:hidden; 
+	padding: 2.5rem;
+}
+
+.bold{
+	font-style: italic;
+	font-weight: bolder;
+}
+
+#italic{
+	font-style: italic;
+}
+
+d
+
+#main-header #logo p{
+	font-size: 0.9rem
+
+} 
+#main-header p{
+	margin-top:1.5rem;
+	}
+
+#main-header div {
+	width:50%;
+}
+
+/*img  div*/
+#logo{
+	display: flex;
+	width: 50%;
+}
+
+#logo img{
+	height: 100%;
+	width: 20%;
+}
+
+.content{
+	width:73%;
+}
+
+.content h4{
+	font-style: italic;
+	font-weight: bolder;
+}
+
+/*date*/
+#imp{
+	display: flex;
+
+}
+
+#imp .date{
+	padding-top:0.8rem;
+}
+
+
+
+/*form*/
+
+
+#entry #form-container input[type='text']{
+	width: 50%;
+	margin-right: 0.8rem;
+}
+
+
+
+
+
+
+/*leave form*/
+#form-container #leave >*div {
+	d
+}
+
+
